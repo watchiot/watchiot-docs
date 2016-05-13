@@ -1,7 +1,7 @@
 Watchiot Docs
 ----------------
 
-This docs site is using Jekyll and Twitter Bootstrap to render.
+This project is using Jekyll and Twitter Bootstrap to render the documentation **Watchiot** site.
 
 ## Install and Run
 
