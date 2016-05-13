@@ -3,6 +3,8 @@ Watchiot Docs
 
 This project is using Jekyll and Twitter Bootstrap to render the documentation **Watchiot** site.
 
+[http://docs.watchiot.org/](http://docs.watchiot.org/)
+
 ## Install and Run
 
 ```shell
@@ -14,7 +16,7 @@ $ jekyll serve
 ```
 Now you can access to the url 
 
-http://localhost:4000/
+[http://localhost:4000/](http://localhost:4000/)
 
 ## Contributing
 
