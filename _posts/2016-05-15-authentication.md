@@ -1,5 +1,4 @@
 ---
-path: '/login'
 title: 'Authenticate'
 
 layout: nil

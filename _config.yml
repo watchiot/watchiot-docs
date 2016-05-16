@@ -3,9 +3,7 @@ title: Watchiot Docs API
 email: dev@watchiot.org
 description: "Watchiot Docs API"
 baseurl: ""
-url: "http://watchiot.org"
-twitter_username: gorums_hack
-github_username:  gorums
+url: "http://www.watchiot.org"
 
 # Build settings
 markdown: kramdown
