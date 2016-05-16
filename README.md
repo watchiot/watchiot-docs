@@ -1,7 +1,7 @@
 Watchiot Docs
 ----------------
 
-This project is using Jekyll and Twitter Bootstrap to render the documentation **Watchiot** site.
+This project is using Jekyll and Twitter Bootstrap to render the **Watchiot** documentation Api site.
 
 [http://docs.watchiot.org/](http://docs.watchiot.org/)
 
