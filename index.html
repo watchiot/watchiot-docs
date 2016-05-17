@@ -7,16 +7,22 @@ layout: default
 </nav>
 
 <section id='content'>
-{% for post in site.posts %}
+{% for category in site.categories %}
+  {% for posts in category %}
+    {% for post in posts  %}
+      {% if post.category != null %}
   <article class='{{ post.type }}'>
-    <a name='{{ post.url }}' href='#{{ post.url }}'><h2>{% if post.type %}<code><b>{{ post.type }}</b> {{ post.path }}</code> {% endif %}{{ post.title }}</h2></a>
+    <a name='{{ post.url }}' href='#{{ post.url }}'><h2>{% if post.type %}<code><b>{{ post.type }}</b> {{ post.path }}</code> {% endif %}{{ post.description }}</h2></a>
     <section class='body'>
       {{ post.content }}
 
       <hr />
-      <p>Any problem with this docs, please <a href="https://github.com/watchiot/watchiot-docs/issues/new?title={{ post.title }}&body=The problem in the path {{ post.path }} is:" target="_blank">open an issue</a></p>
+      <p>Any problem with this docs, please <a href="https://github.com/watchiot/watchiot-docs/issues/new?title={{ post.description }}&body=The problem in the path {{ post.path }} is:" target="_blank">open an issue</a></p>
       <p>Thanks for helping us improve the docs!</p>
     </section>
   </article>
+      {% endif %}
+    {% endfor %}
+  {% endfor %}
 {% endfor %}
 </section>

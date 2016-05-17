@@ -9670,7 +9670,7 @@ $('article').each(function () {
     var that = $(this);
     var header = that.children('a');
     var body = that.children('.body');
-    body.show();
+    body.hide();
     header.toggle(
         function () { body.slideDown('fast'); that.addClass('active'); },
         function () { body.slideUp('fast'); that.removeClass('active'); }

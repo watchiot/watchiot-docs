@@ -7,6 +7,6 @@ url: "http://www.watchiot.org"
 
 # Build settings
 markdown: kramdown
-permalink: pretty
+permalink: "/:categories/:title/"
 gems: ['kramdown']
 exclude: ['config.ru', 'Gemfile', 'Gemfile.lock', 'vendor', 'Procfile', 'Rakefile']
