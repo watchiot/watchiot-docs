@@ -1,7 +1,7 @@
 Watchiot Docs
 ----------------
 
-This project is using Jekyll and Twitter Bootstrap to render the documentation **Watchiot** site.
+This project is using Jekyll and Twitter Bootstrap to render the **Watchiot** documentation Api site.
 
 [http://docs.watchiot.org/](http://docs.watchiot.org/)
 
@@ -11,14 +11,19 @@ This project is using Jekyll and Twitter Bootstrap to render the documentation *
 $ gem install jekyll
 $ git clone https://github.com/watchiot/watchiot-docs.git
 $ cd watchiot-docs
-$ jekyll build
-$ jekyll serve
+$ bundle exec jekyll build
+$ bundle exec jekyll server
 ```
 Now you can access to the url 
 
 [http://localhost:4000/](http://localhost:4000/)
 
 ## Contributing
+
+* Report a bug
+* Report bad description. 
+* Report incomplete description
+* Creating a new post and send us a PR too.
 
 ## License
 
