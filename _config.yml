@@ -1,7 +1,7 @@
 # Site settings
-title: Watchiot Docs API
+title: Watchiot Docs
 email: dev@watchiot.org
-description: "Watchiot Docs API"
+description: "Watchiot Docs"
 baseurl: ""
 url: "http://www.watchiot.org"
 
