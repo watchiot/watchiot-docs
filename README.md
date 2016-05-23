@@ -25,9 +25,9 @@ Now you can access to the url
 * Report incomplete description.
 * Report grammatical errors or orthographic errors.
 * Creating a new post and send us a PR.
-* Add other language docs, like [fr, ru, ch] etc.
+* Add other languages posts, like [fr, ru, ch] etc.
  
-### How add other language docs
+### How add other languages posts
 
 * Fork the watchiot-docs repo
 * Into the _config.yaml
