@@ -2,21 +2,21 @@
     {% include nav.html %}
 </nav>
 
-<div class="post">
-{% if site.lang == "en" %}
-    {% capture link %}{{ site.baseurl_root }}/es{{ page.url}}{% endcapture %}
-    <div align="right">
-        <a href="{{ link }}" >{% t global.spanish %}</a><span class="separator"> &bull; </span>
-    </div>
-{% elsif site.lang == "es" %}
-    {% capture link1 %}{{ site.baseurl_root }}{{ page.url  }}{% endcapture %}
-    <div align="right">
-        <a href="{{ link1 }}" >{% t global.english %}</a><span class="separator"> &bull; </span>
-    </div>
-{% endif %}
-</div>
-
 <section id='content'>
+    <div class="post">
+        {% if site.lang == "en" %}
+        {% capture link %}{{ site.baseurl_root }}/es{{ page.url}}{% endcapture %}
+        <div align="right">
+            <a href="{{ link }}" >{% t global.spanish %}</a><span class="separator"> &bull; </span>
+        </div>
+        {% elsif site.lang == "es" %}
+        {% capture link1 %}{{ site.baseurl_root }}{{ page.url  }}{% endcapture %}
+        <div align="right">
+            <a href="{{ link1 }}" >{% t global.english %}</a><span class="separator"> &bull; </span>
+        </div>
+        {% endif %}
+    </div>
+
     {% for post in site.posts %}
     {% if post.category == null %}
     <article class='{{ post.type }}'>
