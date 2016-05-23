@@ -1,9 +1,9 @@
 Watchiot Docs
 ----------------
 
-This project is using Jekyll to render the **Watchiot** documentation Api site. For more details about Jekyll please visit the [official site](https://jekyllrb.com/)
+This project is using Jekyll to render the **Watchiot Docs Api**. For more details about Jekyll please visit the [official site](https://jekyllrb.com/)
 
-[http://docs.watchiot.org/](http://docs.watchiot.org/)
+If you want to see this project on production, please visit [http://docs.watchiot.org/](http://docs.watchiot.org/)
 
 ## Install and Run
 
