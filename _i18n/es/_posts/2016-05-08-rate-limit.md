@@ -1,6 +1,6 @@
 ---
-title: 'Rate Limit'
-description: 'Rate Limit'
+title: 'Limite'
+description: 'Limite de peticiones'
 
 category: 'api'
 layout: blank

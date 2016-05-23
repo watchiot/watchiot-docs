@@ -1,6 +1,6 @@
 ---
-title: 'Condition'
-description: 'Condition'
+title: 'Condiciones'
+description: 'Condiciones'
 
 category: 'config'
 layout: blank

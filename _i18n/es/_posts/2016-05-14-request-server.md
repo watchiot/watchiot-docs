@@ -1,6 +1,6 @@
 ---
-title: 'Request Server'
-description: 'Request Server'
+title: 'Peticiones del Servidor'
+description: 'Peticiones del Servidor'
 
 category: 'api'
 layout: blank

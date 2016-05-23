@@ -1,6 +1,6 @@
 ---
-title: 'Authenticate'
-description: 'Authenticate'
+title: 'Autenticacion'
+description: 'Autenticacion'
 
 category: 'api'
 layout: blank

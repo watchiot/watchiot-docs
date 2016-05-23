@@ -1,6 +1,6 @@
 ---
-title: 'Request Client'
-description: 'Request Client'
+title: 'Peticiones desde el cliente'
+description: 'Peticiones desde el cliente'
 
 category: 'api'
 layout: blank

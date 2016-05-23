@@ -1,6 +1,6 @@
 ---
-title: 'Notifications'
-description: 'Notifications Guide'
+title: 'Notificaciones'
+description: 'Notificaciones'
 
 layout: blank
 ---
