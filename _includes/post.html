@@ -1,0 +1,49 @@
+<nav id='sidebar'>
+    {% include nav.html %}
+</nav>
+
+<div class="post">
+{% if site.lang == "en" %}
+    {% capture link %}{{ site.baseurl_root }}/es{{ page.url}}{% endcapture %}
+    <div align="right">
+        <a href="{{ link }}" >{% t global.spanish %}</a><span class="separator"> &bull; </span>
+    </div>
+{% elsif site.lang == "es" %}
+    {% capture link1 %}{{ site.baseurl_root }}{{ page.url  }}{% endcapture %}
+    <div align="right">
+        <a href="{{ link1 }}" >{% t global.english %}</a><span class="separator"> &bull; </span>
+    </div>
+{% endif %}
+</div>
+
+<section id='content'>
+    {% for post in site.posts %}
+    {% if post.category == null %}
+    <article class='{{ post.type }}'>
+        <a name='{{ post.url }}' href='#{{ post.url }}'><h2>{{ post.description }}</h2></a>
+        <section class='body'>
+            {{ post.content }}
+        </section>
+    </article>
+    {% endif %}
+    {% endfor %}
+
+    {% for category in site.categories %}
+    {% for posts in category %}
+    {% for post in posts  %}
+    {% if post.category != null %}
+    <article class='{{ post.type }}'>
+        <a name='{{ post.url }}' href='#{{ post.url }}'><h2>{% if post.type %}<code><b>{{ post.type }}</b> {{ post.path }}</code> {% endif %}{{ post.description }}</h2></a>
+        <section class='body'>
+            {{ post.content }}
+
+            <hr />
+            <p>Any problem with this docs, please <a href="https://github.com/watchiot/watchiot-docs/issues/new?title={{ post.description }}&body=The problem in the path {{ post.path }} is:" target="_blank">open an issue</a></p>
+            <p>Thanks for helping us improve the docs!</p>
+        </section>
+    </article>
+    {% endif %}
+    {% endfor %}
+    {% endfor %}
+    {% endfor %}
+</section>

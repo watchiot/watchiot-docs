@@ -1,7 +1,6 @@
 source 'https://rubygems.org'
-ruby '2.2.3'
-gem 'jekyll'
-gem 'kramdown'
-gem 'rack-jekyll'
-gem 'rake'
-gem 'puma'
+
+gem "jekyll", ">= 2.0", "< 4.0"
+gem 'jekyll-multiple-languages-plugin'
+gem "redcarpet"
+

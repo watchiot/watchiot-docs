@@ -1,12 +1,22 @@
-# Site settings
 title: Watchiot Docs
 email: dev@watchiot.org
 description: "Watchiot Docs"
 baseurl: ""
 url: "http://www.watchiot.org"
 
-# Build settings
 markdown: kramdown
-permalink: "/:categories/:title/"
 gems: ['kramdown']
+
+permalink: /:title/
+
+# Plugins
+gems: 
+  - jekyll-multiple-languages-plugin
+
+# jekyll-multiple-languages-plugin settings:
+languages: ["en", "es"]
+
+exclude_from_localizations: ["javascript", "images", "css", "Gemfile", "scripts", "favicon.ico", "LICENSE", "README.md"]
+
+# Build settings
 exclude: ['config.ru', 'Gemfile', 'Gemfile.lock', 'vendor', 'Procfile', 'Rakefile']
