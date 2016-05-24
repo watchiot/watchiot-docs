@@ -23,6 +23,10 @@
         <a name='{{ post.url }}' href='#{{ post.url }}'><h2>{{ post.description }}</h2></a>
         <section class='body'>
             {{ post.content }}
+
+            <hr />
+            <p>{% t global.issues %} <a href="https://github.com/watchiot/watchiot-docs/issues/new?title={{ post.description }}&body=The problem in the path {{ post.path }} is:" target="_blank">{% t global.open_issues %}</a></p>
+            <p>{% t global.thanks %}</p>
         </section>
     </article>
     {% endif %}
@@ -38,8 +42,8 @@
             {{ post.content }}
 
             <hr />
-            <p>Any problem with this docs, please <a href="https://github.com/watchiot/watchiot-docs/issues/new?title={{ post.description }}&body=The problem in the path {{ post.path }} is:" target="_blank">open an issue</a></p>
-            <p>Thanks for helping us improve the docs!</p>
+            <p>{% t global.issues %} <a href="https://github.com/watchiot/watchiot-docs/issues/new?title={{ post.description }}&body=The problem in the path {{ post.path }} is:" target="_blank">{% t global.open_issues %}</a></p>
+            <p>{% t global.thanks %}</p>
         </section>
     </article>
     {% endif %}
