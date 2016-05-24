@@ -1,9 +1,9 @@
 Watchiot Docs
 ----------------
 
-This project is using Jekyll and Twitter Bootstrap to render the **Watchiot** documentation Api site.
+This project is using Jekyll to render the **Watchiot Docs Api**. For more details about Jekyll please visit the [official site](https://jekyllrb.com/)
 
-[http://docs.watchiot.org/](http://docs.watchiot.org/)
+If you want to see this project on production, please visit [http://docs.watchiot.org/](http://docs.watchiot.org/)
 
 ## Install and Run
 
@@ -20,10 +20,42 @@ Now you can access to the url
 
 ## Contributing
 
-* Report a bug
+* Report a bug.
 * Report bad description. 
-* Report incomplete description
-* Creating a new post and send us a PR too.
+* Report incomplete description.
+* Report grammatical errors or orthographic errors.
+* Creating a new post and send us a PR.
+* Add other languages posts, like [fr, ru, ch] etc.
+ 
+### How add other languages posts
+
+* Fork the watchiot-docs repo
+* Into the _config.yaml
+* Edit ```languages: ["en", "es"]``` adding the new lanaguage, example add "fr" ```languages: ["en", "es", "fr"]```
+* Into the i18n folder make a new folder called *fr*
+* Into the *fr* folder copy and paste the same files into the folder *i18n/en*
+* Then only you have to edit the posts using the new language.
+* The last step is add *fr* into the selector view language into the file *_includes/post.html*
+ 
+```html
+<div class="post">
+    {% if site.lang == "en" %}
+    {% capture link %}{{ site.baseurl_root }}/es{{ page.url}}{% endcapture %}
+    <div align="right">
+        <a href="{{ link }}" >{% t global.spanish %}</a><span class="separator"> &bull; </span>
+    </div>
+    {% elsif site.lang == "es" %}
+    {% capture link1 %}{{ site.baseurl_root }}{{ page.url  }}{% endcapture %}
+    <div align="right">
+        <a href="{{ link1 }}" >{% t global.english %}</a><span class="separator"> &bull; </span>
+    </div>
+    
+    <!-- Here you new language selector -->
+    
+    {% endif %}
+</div>
+```
+* And the end send to us a pull request. 
 
 ## License
 
