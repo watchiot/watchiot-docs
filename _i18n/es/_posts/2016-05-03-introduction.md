@@ -20,7 +20,7 @@ de deciciones basados en el comportamiento de sus activos.
 ### Organizacion de la documentacion
 
 * **General:** explica los diferentes conceptos manejados por la aplicacion. Tales como *espacios*, *proyectos*,
-*notificaciones*, *equipos* y *graficas*
+*notificaciones*, *equipos*, *graficas*, *agentes* y *configuraciones predefinidas*
 
 * **Config:** define como configurar un proyecto con las diferentes opciones para recolectar metricas
 y enviar notificaciones
