@@ -5,7 +5,8 @@ description: 'Introducion'
 layout: blank
 ---
 
-Bienvenido a la documentacion the **WatchIoT**.
+Bienvenido a la documentacion the **WatchIoT**. Vamos a intentar mantener la documentacion lo mas
+escueta y sencilla posible.
 
 ### Que es WatchIoT?
 
