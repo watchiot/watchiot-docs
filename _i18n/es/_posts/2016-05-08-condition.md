@@ -26,6 +26,8 @@ critical:
      when: (server_name == "my_server1" && free_space < 10) ||
            (server_name == "my_server2" && free_space <= 7)
 
+     ...
+...
 {% endhighlight %}
 
 Dentro de un estado definimos una etiqueta **when:** donde se configura la condicion que tiene que cumplir para que

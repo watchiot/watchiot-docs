@@ -9,8 +9,15 @@ layout: blank
 de que usted tenga mayor flexibilidad al selecionar la via y como ser notificado cuando algunos
 de sus activos no esten funcionando como es esperado.
 
-Por el momento **WatcIoT** puede notificar via email y webhooks, comprometiendonos en 
-brindar nuevas vias de notificaciones en un futuro proximo. 
+**WatchIoT** mantiene un proyecto de codigo abierto con la idea de que la comunidad agregue nuevas
+formas de notificar. En este repositorio de notificaciones se encuentran todas las vias de notificacion
+manejadas por **WatchIoT**
 
-Para conocer como configuras las notificaciones en un proyecto via email o webhook por favor acceder al apartado
-de [configuracion de notificaciones](#/notif/)
+Vias de notificacion de **WatchIoT**
+
+* **Email**
+* **Webhook**
+
+Para conocer como configuras las notificaciones en un proyecto por favor acceder al apartado
+de [configuracion de notificaciones](#/notif/) o para conocer mas como colaborar con este proyecto y
+agregar nuevas formas de notificaciones acceda a [repositorio de notificaciones](#/notif-repo/)
