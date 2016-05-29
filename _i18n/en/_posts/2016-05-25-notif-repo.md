@@ -1,6 +1,6 @@
 ---
-title: 'Repo. Notification'
-description: 'Repository of Notification'
+title: 'Introduction'
+description: 'Introduction of Repository of Notification'
 
 category: 'notif'
 layout: blank

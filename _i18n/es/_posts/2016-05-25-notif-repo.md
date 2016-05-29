@@ -1,7 +1,7 @@
 ---
-title: 'Repo. Notificaciones'
-description: 'Repositorio de Notificaciones'
+title: 'Introduccion'
+description: 'Introduccion al Repositorio de Notificaciones'
 
-category: 'notif'
+category: 'repo. notif'
 layout: blank
 ---

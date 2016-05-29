@@ -1,7 +1,7 @@
 ---
-title: 'Repo. Agentes'
-description: 'Repositorio de Agentes'
+title: 'Introduccion'
+description: 'Introduccion al Repositorio de Agentes'
 
-category: 'agent'
+category: 'repo. agent'
 layout: blank
 ---
