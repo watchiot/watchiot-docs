@@ -1,5 +1,5 @@
 ---
-title: 'Limite'
+title: 'Limite de peticiones'
 description: 'Limite de peticiones'
 
 category: 'api'
