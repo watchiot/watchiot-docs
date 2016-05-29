@@ -3,6 +3,9 @@ email: dev@watchiot.org
 description: "Watchiot Docs"
 baseurl: ""
 url: "http://www.watchiot.org"
+url_api: "http://api.watchiot.org"
+url_config: "http://repo.watchiot.org"
+url_notif: "http://notif.watchiot.org"
 
 markdown: kramdown
 gems: ['kramdown']
