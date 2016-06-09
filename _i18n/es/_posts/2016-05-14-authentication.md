@@ -7,7 +7,7 @@ layout: blank
 ---
 
 Todas las peticiones necesitan ser autenticada. Para esto se envia las peticiones con la cabecera
-**Authorization: {USERNAME}_{API_KEY}**
+**Authorization: {USERNAME} {API_KEY}**
 
 {% highlight bash %}
 Authorization: {USERNAME}_{API_KEY}
