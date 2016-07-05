@@ -33,7 +33,7 @@ Solo se le puede realizar 3 peticiones cada 10 minuto que devuelvan **UNAUTHORIZ
 Si realizamos mas de 3 intentos fallidos en menos de 10 minutos recibiremos como respuesta.
 
 {% highlight http %}
-HTTP/1.1 429 Too Many Requests
+HTTP/1.1 429 TOO MANY REQUESTS
 {% endhighlight %}
 
 Para conocer mas sobre los posibles respuesta de errores acceder a [Errores](#/error/)
