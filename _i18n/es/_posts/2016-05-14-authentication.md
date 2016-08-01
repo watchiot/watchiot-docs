@@ -29,11 +29,13 @@ de no autorizacion sera recibido.
 HTTP/1.1 401 UNAUTHORIZED
 {% endhighlight %}
 
-Solo se le puede realizar 3 peticiones cada 10 minuto que devuelvan **UNAUTHORIZED** para evitar ataques de fuerza bruta.
-Si realizamos mas de 3 intentos fallidos en menos de 10 minutos recibiremos como respuesta.
+Solo se le puede realizar 10 peticiones cada 10 minuto que devuelvan **UNAUTHORIZED** para evitar ataques de fuerza bruta.
+Si realizamos mas de 10 intentos fallidos en menos de 10 minutos recibiremos como respuesta auque la autenticacion sea correcta.
 
 {% highlight http %}
 HTTP/1.1 429 TOO MANY REQUESTS
 {% endhighlight %}
+
+Para mas detalles ver la pagina **[Limite de peticiones](#/rate-limit/)**
 
 Para conocer mas sobre los posibles respuesta de errores acceder a [Errores](#/error/)

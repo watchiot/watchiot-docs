@@ -19,6 +19,10 @@ Brindado graficas avanzadas donde usted puede tener una pespectiva global y real
 de deciciones basados en el comportamiento de sus activos. Por ejemplo que dias de la semana sus servicios demanda
 mayor memoria RAM, en que fechas sus clientes realizan mas compras o en cuales no, etc.
 
+**WatchIoT** no se puede categorizar como un sistema puramente **[APM](https://en.wikipedia.org/wiki/Application_performance_management)** ya que como no esta anclado a ninguna tecnologia
+y es completamente abierto y desacoplado como sistema de monitoreo, puede ser utilizado para propositos mas generales.
+Donde **APM** se puede ver como un subconjunto del mismo.
+
 ### Organizacion de la documentacion
 
 * **General:** Explica los diferentes conceptos manejados por **WatchIot**. Tales como *espacios*, *proyectos*,
