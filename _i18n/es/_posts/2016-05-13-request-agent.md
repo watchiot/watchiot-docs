@@ -90,4 +90,4 @@ Content-Type: application/json
 }
 {% endhighlight %}
 
-### Sobreescribinedo la configuracion
+### Sobreescribiendo la configuracion
