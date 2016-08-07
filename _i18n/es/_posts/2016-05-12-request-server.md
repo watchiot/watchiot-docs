@@ -1,21 +1,9 @@
 ---
-title: 'Peticiones del Servidor'
-description: 'Peticiones del Servidor'
+title: 'Peticiones del servidor'
+description: 'Peticiones del servidor'
 
 category: 'api'
 layout: blank
 ---
 
-This method allows users to retrieve stuff.
-
-### Response
-
-Sends back a collection of things.
-
-```Authentication: bearer TOKEN```
-```{
-    id: thing_2,
-    name: 'My second thing'
-}```
-
-For errors responses, see the [response status codes documentation](#response-status-codes).
+El servidor puede enviar peticiones hacia un **WebServices** que tengas publicado para obtener las metricas.
