@@ -6,8 +6,8 @@ category: 'api'
 layout: blank
 ---
 
-Cada **[proyecto](#/project/)** puede tener N-agentes recolectando las metricas en distintos servidores o **EndPoint**.
-La **API** solo puede recibir dos peticiones por minutos en el plan **free**, osea que si tenemos 4 agentes recolectando
+Cada **[proyecto](#/project/)** puede tener N-agentes recolectando las metricas en distintos servidores o *endpoints*.
+La *API* solo puede recibir dos peticiones por minutos en cada proyecto en el plan *free*, osea que si tenemos 4 agentes recolectando
 informacion de los recursos como el disco duro o la memoria, cada uno podra enviar las metricas cada dos minutos. Si se excede
 el numero de peticiones por minuto, se recibe la siguiente respuesta:
 
@@ -29,7 +29,7 @@ deben enviar las metricas detras de las **IPs** configuradas. Para saber mas sob
 **[IPs](#/ip/)**
 
 La peticion envia los datos en **JSON** siendo obligatorio los valores dentro de *params*. El siquiente es un ejemplo de
-peticion enviando las metricas:
+peticion enviada por un agente:
 
 {% highlight bash %}
 curl --request POST \
@@ -45,15 +45,18 @@ curl --request POST \
             },
             notifOnly:
             {
-                ip: "127.0.01",
                 when: "critical"
                 type: "email",
-                dst: "{CUSTOMER_EMAIL_OR_USERNAME}"
+                data:
+                {
+                    to: "other_email@company.com",
+                    subject: "Nuevo subjects"
+                }
             }
           }'
 {% endhighlight %}
 
-La peticion se realiza por **POST** a la **URI** "/{USERNAME}/{MY_SPACE}/{MY_PROJECT}" para refenciar el proyecto
+La peticion se realiza por *POST* a la *URL* "/{USERNAME}/{MY_SPACE}/{MY_PROJECT}" para refenciar el proyecto
 al cual se le envia las metricas.
 
 Como se observa contamos con la entrada *params* que es obligatoria y dentro los nombre de las metricas con sus respectivos valores
@@ -86,8 +89,31 @@ Content-Type: application/json
 
 {
     code: 200,
-    msg: "The param 'type' in notifOnly is not valid"
+    msg: "The value of parameter 'type' in notifOnly is not valid"
 }
 {% endhighlight %}
 
-### Sobreescribiendo la configuracion
+## Sobreescribiendo la configuracion
+
+Sobreescribir el comportamiento de notificacion a la hora de procesar las metricas enviadas depende del tipo de
+notificacion y los parametros que este maneja. Por ejemplo en el tipo de notificacion *email*, podemos sobreescribir
+los parametros de destino o subject. Los parametros que se van a sobreescribir en dependencia del tipo de notificacion
+se agrupan dentro del *Object* data
+
+{% highlight json %}
+data:
+{
+    to: "other_email@company.com",
+    subject: "Nuevo subjects"
+}
+{% endhighlight %}
+
+### Parametros que se pueden sobreescribir en la notificacion de email
+
+ * **to:** Los correos que se deben notificar
+ * **subject:** El asunto del correo
+ * **body:** El cuerpo del correo
+
+### Parametros que se pueden sobreescribir en la notificacion de webhook
+
+ * **url:** La URL que se debe llamar
