@@ -2,7 +2,7 @@
 source 'https://rubygems.org'
 
 ruby '2.2.3'
-
+# dev ruby '~> 2.3'
 gem 'jekyll'
 gem 'kramdown'
 gem 'jekyll-multiple-languages-plugin'
