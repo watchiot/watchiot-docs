@@ -36,7 +36,7 @@ curl --request POST \
   --url {{site.url_api}}/{MY_SPACE}/{MY_PROJECT} \
   --header 'Authorization: {USERNAME} {API_KEY}'
   --data '{
-            params:
+            metrics:
             {
                 param1: "value1",
                 param2: "value2",
@@ -59,7 +59,7 @@ curl --request POST \
 La peticion se realiza por *POST* a la *URL* "/{MY_SPACE}/{MY_PROJECT}" para refenciar el proyecto
 al cual se le envia las metricas.
 
-Como se observa contamos con la entrada *params* que es obligatoria y dentro los nombre de las metricas con sus respectivos valores
+Como se observa contamos con la entrada *metrics* que es obligatoria y dentro los nombre de las metricas con sus respectivos valores
 *param1: "value1"*.
 
 Opcional tenemos la entrada *notifOnly* que su funcion es sobreescribir el comportamiento definido
