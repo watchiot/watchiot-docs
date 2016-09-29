@@ -12,8 +12,6 @@ parar que las metricas se etiqueten como un estado es necesario que la evaluacio
 Cada estado solo puede definir una condicion y puede hacer uso de todas las metricas (variables), definiendo un predicado
 como cualquier lenguaje de programacion con sus operadores mas comunes, mas el operador de expresion regular.
 
-Las valores de las metricas se accede utilizando la sintaxis **${var_metric}**.
-
 * Operadores booleanos: **&&**, **\|\|**, **!**
 * Operadores binarios de comparacion: **==**, **<**, **>**, **<=**, **>=**, **!=**
 * Operador binario de comparacion con expresiones regulares: **~=**
@@ -25,8 +23,8 @@ Ejemplo de condicional dentro de un estado
 ...
 
 critical:
-     when: (${server_name} == "my_server1" && ${free_space} < 10) ||
-           (${server_name} == "my_server2" && ${free_space} <= 7)
+     when: (server_name == "my_server1" && free_space < 10) ||
+           (server_name == "my_server2" && free_space <= 7)
 
      ...
 ...
