@@ -1,7 +1,7 @@
 ---
 title: 'Introduccion'
-description: 'Introduccion al Repositorio de Agentes'
+description: 'Introduccion a los Agentes predefinidos'
 
-category: 'repo. agent'
+category: 'agentes'
 layout: blank
 ---

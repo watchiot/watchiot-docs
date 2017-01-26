@@ -1,6 +1,6 @@
 ---
 title: 'Introduction'
-description: 'Introduction of repository of Agents'
+description: 'Introduction of default Agents'
 
 category: 'agent'
 layout: blank

@@ -23,8 +23,8 @@ y es completamente abierto y desacoplado como sistema de monitoreo, puede ser ut
 
 ### Organizacion de la documentacion
 
-La pirmera parte explica los diferentes conceptos manejados por **WatchIoT**. Tales como *espacios*, *proyectos*,
-*notificaciones*, *equipos*, *graficas* y *agentes*
+La pirmera parte explica los diferentes conceptos manejados por **WatchIoT**. Tales como *[espacios](#/space/)*, *[proyectos](#/project/)*,
+*[notificaciones](#/notification/)*, *[equipos](#/team/)*, *[graficas](#/chart/)* y *[agentes](#/agent/)*
 
 * **[Config](#/config/):** Define como configurar un proyecto con las diferentes opciones para recolectar metricas
 y enviar notificaciones
@@ -34,8 +34,5 @@ y enviar notificaciones
 * **[SDK](#/sdk/):** Brinda un panorama de como utilizar diferentes **SDK** para distintos lenguajes y plataformas con la
 finalidad de lograr una mayor y segura integracion con nuestra **API**
 
-* **[Repo de Agentes](#/agent-repo/):** Describe los agentes presentes en **WatchIoT** como parte de los servicios,
- ademas de como agregar nuevos agentes y configuraciones predefinas al repositorio de **WatchIoT**
-
-* **[Repo de Notificaciones](#/notif-repo/):** Describe los tipos de notificaiones presentes en **WatchIoT** como parte de los servicios,
-ademas de como agregar nuevos tipos de notificaciones y como integrarlos con **WatchIoT**
+* **[Agentes Predefinidos](#/agent-repo/):** Describe los agentes predefinidos presentes en **WatchIoT** como parte de los servicios,
+ ademas de como agregar nuevos agentes y configuraciones predefinidos al repositorio de **WatchIoT**
