@@ -10,7 +10,7 @@ Una condicion dentro de un [estado](#/states/) es la que determina si las metric
 parar que las metricas se etiqueten como un estado es necesario que la evaluacion de la condicion sea  verdadera.
 
 Cada estado solo puede definir una condicion y puede hacer uso de todas las metricas (variables), definiendo un predicado
-como cualquier lenguaje de programacion con sus operadores mas comunes, mas el operador de expresion regular.
+como cualquier lenguaje de programacion con sus operadores mas comunes.
 
 * Operadores booleanos: **&&**, **\|\|**, **!**
 * Operadores binarios de comparacion: **==**, **<**, **>**, **<=**, **>=**, **!=**
