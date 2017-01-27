@@ -27,6 +27,15 @@ de no autorizacion sera recibido.
 
 {% highlight http %}
 HTTP/1.1 401 UNAUTHORIZED
+Content-Type: application/json
+
+{
+    "code": 401,
+    "msg": "UNAUTHORIZED",
+    "error": {
+        "description": "USERNAME or API_KEY incorrect."        
+    }    
+}
 {% endhighlight %}
 
 Solo se le puede realizar 10 peticiones cada 10 minuto que devuelvan **UNAUTHORIZED** para evitar ataques de fuerza bruta.
@@ -34,6 +43,15 @@ Si realizamos mas de 10 intentos fallidos en menos de 10 minutos recibiremos com
 
 {% highlight http %}
 HTTP/1.1 429 TOO MANY REQUESTS
+Content-Type: application/json
+
+{
+    "code": 429,
+    "msg": "TOO MANY REQUESTS",
+    "error": {
+        "description": "Many unauthorized request. You have to wait for 3242423 sec"
+    }
+}
 {% endhighlight %}
 
 Para mas detalles ver la pagina **[Limite de peticiones](#/rate-limit/)**
