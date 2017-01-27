@@ -33,7 +33,7 @@ Content-Type: application/json
     "code": 401,
     "msg": "UNAUTHORIZED",
     "error": {
-        "description": "USERNAME or API_KEY incorrect."        
+        "description": "USERNAME or API_KEY incorrect"        
     }    
 }
 {% endhighlight %}

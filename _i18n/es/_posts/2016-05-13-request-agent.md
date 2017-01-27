@@ -66,10 +66,10 @@ Content-Type: application/json
     "code": 400,
     "msg": "BAD REQUEST",
     "error": {
-        "description": "Errors into the metrics.",
+        "description": "Errors into the metrics",
         "fields": {
-            "param1": "The metric param1 does not exist into the configuration yml project.",
-            "param2": "The value type of metric param2 has to be number."
+            "param1": "The metric param1 does not exist into the configuration yml project",
+            "param2": "The value type of metric param2 has to be number"
         }
     }    
 }
